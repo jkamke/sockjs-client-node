@@ -1,9 +1,11 @@
+### A fork of sockjs-client-node with merged pull requests from the inactive repo
+
 # SockJS Client Node
 
 Node client for [SockJS](https://github.com/sockjs). Currently, only
 the WebSocket transport is supported.
 
-## Usage
+## Usage (invalid)
 
     var sjsc = require('sockjs-client-ws');
     var client = sjsc.create("http://localhost/sjsServer");
