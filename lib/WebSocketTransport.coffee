@@ -13,6 +13,8 @@ class WebSocketTransport extends EventEmitter
     @ws.on 'message', @onData.bind(@)
     @ws.on 'close', =>
       @emit 'close'
+    @ws.on 'heartbeat', =>
+      @emit 'heartbeat'
     @ws.on 'open', ->
     @ws.on 'error', (error) =>
       @emit 'error', error
