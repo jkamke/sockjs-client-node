@@ -1,11 +1,11 @@
 {
     "name": "sockjs-client-ws",
-    "author": "Surat Teerapittayanon",
+    "author": "Jonathan Kamke",
     "version": "0.1.0",
     "keywords": ["websockets", "websocket", "sockjs"],
     "repository": {
         "type": "git",
-        "url": "git://github.com/steerapi/sockjs-client-node.git"
+        "url": "git://github.com/jkamke/sockjs-client-node.git"
     },
     "main": "index",
     "description": "Client library for SockJS (Websocket)",
