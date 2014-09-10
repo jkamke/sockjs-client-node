@@ -64,7 +64,7 @@ class WebSocketTransport extends EventEmitter
     @emit 'heartbeat'
 
   _didClose: (code, reason, force) ->
-    throw new Error('INVALID_STATE_ERR') if @readyState isnt WebSocketTransport.CONNECTING and that.readyState isnt WebSocketTransport.OPEN and that.readyState isnt WebSocketTransport.CLOSING
+    throw new Error('INVALID_STATE_ERR') if @readyState isnt WebSocketTransport.CONNECTING and @readyState isnt WebSocketTransport.OPEN and @readyState isnt WebSocketTransport.CLOSING
     if @_transport
       @_transport.close()
       @_transport = null
